@@ -14,6 +14,16 @@ knitr::opts_chunk$set(
 )
 ```
 
+#Fidap R Client
+This Fidap client connect to our big data warehouses and gives you seamless access to external data.
+
+##Get Api Key
+**bold** Get the api_key from [fidap]<https.fidap.com> dashboard.
+
+##Usage
 ```{r setup}
 library(fidap)
+client <- fidap_client(api_key='xxxxxxx', source='bq')
+df <- client$sql('select * from table_name')
+print(df)
 ```

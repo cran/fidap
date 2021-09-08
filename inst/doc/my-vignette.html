@@ -141,7 +141,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fidap)</span></code></pre></div>
+<p>#Fidap R Client This Fidap client connect to our big data warehouses and gives you seamless access to external data.</p>
+<p>##Get Api Key <strong>bold</strong> Get the api_key from [fidap]&lt;https.fidap.com&gt; dashboard.</p>
+<p>##Usage</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fidap)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>client <span class="ot">&lt;-</span> <span class="fu">fidap_client</span>(<span class="at">api_key=</span><span class="st">&#39;xxxxxxx&#39;</span>, <span class="at">source=</span><span class="st">&#39;bq&#39;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> client<span class="sc">$</span><span class="fu">sql</span>(<span class="st">&#39;select * from table_name&#39;</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(df)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;No such user&quot;</span></span></code></pre></div>
 
 
 

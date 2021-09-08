@@ -1,6 +1,6 @@
 Package: fidap
 Title: Access Clean External Data Easily
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: 
     person(given = "Ashish",
            family = "Singal",
@@ -16,8 +16,8 @@ Suggests: rmarkdown, knitr
 VignetteBuilder: knitr
 URL: https://app.fidap.com
 NeedsCompilation: no
-Packaged: 2021-08-12 19:27:04 UTC; muhammadarslan
+Packaged: 2021-09-08 11:52:51 UTC; muhammadarslan
 Author: Ashish Singal [aut, cre, cph] (<https://orcid.org/0000-0002-6409-4304>)
 Maintainer: Ashish Singal <arslan@fidap.com>
 Repository: CRAN
-Date/Publication: 2021-08-16 07:50:06 UTC
+Date/Publication: 2021-09-08 13:30:06 UTC
